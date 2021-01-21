@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Igor Pechenkin](https://up.htmlacademy.ru/htmlcss/30/user/519921).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
