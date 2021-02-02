@@ -23,3 +23,207 @@
   src: url("../fonts/robotobold.woff2") format("woff2"),
   url("../fonts/robotobold.woff2") format("woff");
 }
+
+/* Variables */
+
+:root {
+  /*color: #ffffff;*/
+  /*background-color: #849D8F;*/
+  /*color: #323232;*/
+  /*color: #5a5a5a;*/
+  /*background-color: #f8f7f4;*/
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  background-color: #849D8F;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button */
+
+.button {
+  color: #ffffff;
+  /*font: inherit;*/
+  ont-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  background-image: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  border: none;
+  border-radius: 50px;
+}
+
+.button-slider {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+/* Header */
+
+.site-navigation {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.user-navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.user-navigation a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-contacts {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.header-contacts-tel {
+  font-size: 22px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Slider */
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-title {
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.slider-control-list {
+  list-style: none;
+}
+
+/* Promotions */
+
+.promotions-list {
+  list-style: none;
+}
+
+.promotion-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+.promotion-description {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+/* Hits */
+
+.product-item a {
+  text-decoration: none;
+}
+
+.product-item-title {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.product-item-image {
+  border-radius: 50%;
+}
+
+.product-item-price {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.product-item-weight {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+/* Advantages */
+
+.advantages {
+  color: #323232;
+  background-image: url("../img/waffle-pattern-bg.jpg");
+  background-repeat: repeat;
+  background-position: 0 0;
+  border-radius: 16px;
+}
+
+.advantages-lead {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.advantages-list {
+  list-style: none;
+}
+
+/* Blog preview */
+
+.blog-preview {
+  color: #323232;
+  background-image: url("../img/strawberry-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.blog-preview-lead {
+  font-weight: 500;
+}
+
+.blog-preview-excerpt {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #323232;
+}
+
+/* Mail subscription */
+
+.mail-subscription {
+  background-color: #f8f7f4;
+}
+
+.mail-subscription-info {
+  color: #5a5a5a;
+}
