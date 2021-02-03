@@ -33,6 +33,8 @@
   /*color: #5a5a5a;*/
   /*background-color: #f8f7f4;*/
   /*background-color: #fefefe;*/
+  /*background-color: #ededed;*/
+  /*background-color: #d07058;*/
 }
 
 /* Global */
@@ -66,9 +68,24 @@ img {
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  background-image: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+  background-image: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   border: none;
   border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.button:hover {
+  background-image:
+    linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+    linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px #ac1000;
+}
+
+.button:active {
+  background:
+    linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+    linear-gradient(180deg, #f26843 0%, #e74a35 100%);
+  box-shadow: inset 0 2px 2px #942718;
 }
 
 .button-slider {
@@ -85,8 +102,21 @@ img {
   font-weight: 700;
 }
 
-.site-navigation a {
+.site-navigation-link {
   color: #ffffff;
+}
+
+.site-navigation-link:hover,
+.site-navigation-link:active {
+  color: #323232;
+  text-decoration: none;
+  background-color: #ededed;
+  border-radius: 26px;
+}
+
+.site-navigation-link-current {
+  color: #ffffff;
+  background-color: #d07058;
 }
 
 .catalog-dropdown-list {
