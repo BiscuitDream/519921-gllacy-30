@@ -38,6 +38,7 @@
   --bg-popup: #f8f7f4;
   --bg-popup-alternative: #fefefe;
   --bg-dropdown: #ffffff;
+  --bg-pic-waffle: #ede1ca;
 
   --bg-link-hover: #ededed;
   --bg-link-current: #d07058;
@@ -242,6 +243,7 @@ img {
 
 .advantages {
   color: var(--secondary-text);
+  background-color: var(--bg-pic-waffle);
   background-image: url("../img/waffle-pattern-bg.jpg");
   background-repeat: repeat;
   background-position: 0 0;
@@ -262,6 +264,7 @@ img {
 
 .blog-preview {
   color: var(--secondary-text);
+  background-color: var(--bg-popup-alternative);
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
