@@ -32,7 +32,10 @@
   /*color: #323232;*/
   /*color: #5a5a5a;*/
   /*background-color: #f8f7f4;*/
+  /*background-color: #fefefe;*/
 }
+
+/* Global */
 
 body {
   min-width: 1200px;
@@ -226,4 +229,57 @@ img {
 
 .mail-subscription-info {
   color: #5a5a5a;
+}
+
+.banner {
+  border-radius: 16px;
+}
+
+/* Map */
+
+.map {
+  font-size: 14px;
+  line-height: 20px;
+  color: #323232;
+}
+
+.map-address {
+  background-color: #fefefe;
+  border-radius: 16px;
+}
+
+.map-address-contact {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #323232;
+  text-decoration: none;
+}
+
+/* Footer */
+
+.social-list {
+  list-style: none;
+}
+
+.social-list a {
+  color: #ffffff;
+}
+
+.footer-info-list {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.footer-info-item-favorites {
+  font-weight: 700;
+}
+
+.footer-info-item a {
+  color: #ffffff;
+}
+
+.copyright-link {
+  color: #ffffff;
 }
