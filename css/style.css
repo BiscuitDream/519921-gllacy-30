@@ -27,14 +27,21 @@
 /* Variables */
 
 :root {
-  /*color: #ffffff;*/
-  /*background-color: #849D8F;*/
-  /*color: #323232;*/
-  /*color: #5a5a5a;*/
-  /*background-color: #f8f7f4;*/
-  /*background-color: #fefefe;*/
-  /*background-color: #ededed;*/
-  /*background-color: #d07058;*/
+  --primary-text: #ffffff;
+  --secondary-text: #323232;
+  --alternative-text: #5a5a5a;
+
+  --bg-first: #849d8f;
+  --bg-second: #8996a6;
+  --bg-third: #9d8b84;
+
+  --bg-popup: #f8f7f4;
+  --bg-popup-alternative: #fefefe;
+  --bg-dropdown: #ffffff;
+
+  --bg-link-hover: #ededed;
+  --bg-link-current: #d07058;
+
 }
 
 /* Global */
@@ -48,8 +55,8 @@ body {
   line-height: 22px;
   font-weight: 400;
   font-style: normal;
-  color: #ffffff;
-  background-color: #849D8F;
+  color: var(--primary-text);
+  background-color: var(--bg-first);
 }
 
 img {
@@ -60,7 +67,7 @@ img {
 /* Button */
 
 .button {
-  color: #ffffff;
+  color: var(--primary-text);
   /*font: inherit;*/
   font-size: 18px;
   line-height: 24px;
@@ -103,20 +110,20 @@ img {
 }
 
 .site-navigation-link {
-  color: #ffffff;
+  color: var(--primary-text);
 }
 
 .site-navigation-link:hover,
 .site-navigation-link:active {
-  color: #323232;
+  color: var(--secondary-text);
   text-decoration: none;
-  background-color: #ededed;
+  background-color: var(--bg-link-hover);
   border-radius: 26px;
 }
 
 .site-navigation-link-current {
-  color: #ffffff;
-  background-color: #d07058;
+  color: var(--primary-text);
+  background-color: var(--bg-link-current);
 }
 
 .catalog-dropdown-list {
@@ -124,12 +131,12 @@ img {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
-  background-color: #ffffff;
+  background-color: var(--bg-dropdown);
 }
 
 .catalog-dropdown-list a {
   text-decoration: none;
-  color: #323232;
+  color: var(--secondary-text);
 }
 
 .user-navigation {
@@ -139,16 +146,16 @@ img {
 }
 
 .user-navigation-item {
-  color: #ffffff;
+  color: var(--primary-text);
   text-decoration: none;
 }
 
 .login-form {
-  background-color: #f8f7f4;
+  background-color: var(--bg-popup);
 }
 
 .login-form-link {
-  color: #323232;
+  color: var(--secondary-text);
   font-size: 13px;
   line-height: 15px;
   font-weight: 400;
@@ -163,7 +170,7 @@ img {
 .header-contacts-tel {
   font-size: 22px;
   line-height: 24px;
-  color: #ffffff;
+  color: var(--primary-text);
   text-decoration: none;
 }
 
@@ -209,7 +216,7 @@ img {
 }
 
 .product-item-title {
-  color: #ffffff;
+  color: var(--primary-text);
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
@@ -234,7 +241,7 @@ img {
 /* Advantages */
 
 .advantages {
-  color: #323232;
+  color: var(--secondary-text);
   background-image: url("../img/waffle-pattern-bg.jpg");
   background-repeat: repeat;
   background-position: 0 0;
@@ -254,7 +261,7 @@ img {
 /* Blog preview */
 
 .blog-preview {
-  color: #323232;
+  color: var(--secondary-text);
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -268,17 +275,17 @@ img {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: #323232;
+  color: var(--secondary-text);
 }
 
 /* Mail subscription */
 
 .mail-subscription {
-  background-color: #f8f7f4;
+  background-color: var(--bg-popup);
 }
 
 .mail-subscription-info {
-  color: #5a5a5a;
+  color: var(--alternative-text);
 }
 
 .banner {
@@ -290,11 +297,11 @@ img {
 .map {
   font-size: 14px;
   line-height: 20px;
-  color: #323232;
+  color: var(--secondary-text);
 }
 
 .map-address {
-  background-color: #fefefe;
+  background-color: var(--bg-popup-alternative);
   border-radius: 16px;
 }
 
@@ -302,7 +309,7 @@ img {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: #323232;
+  color: var(--secondary-text);
   text-decoration: none;
 }
 
@@ -313,7 +320,7 @@ img {
 }
 
 .social-list a {
-  color: #ffffff;
+  color: var(--primary-text);
 }
 
 .footer-info-list {
@@ -327,18 +334,18 @@ img {
 }
 
 .footer-info-item a {
-  color: #ffffff;
+  color: var(--primary-text);
 }
 
 .copyright-link {
-  color: #ffffff;
+  color: var(--primary-text);
 }
 
 /* Feedback */
 
 .feedback {
-  color: #323232;
-  background-color: #f8f7f4;
+  color: var(--secondary-text);
+  background-color: var(--bg-popup);
   border-radius: 6px;
 }
 
