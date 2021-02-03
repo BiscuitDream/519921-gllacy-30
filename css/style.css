@@ -89,8 +89,17 @@ img {
   color: #ffffff;
 }
 
-.catalog-list {
+.catalog-dropdown-list {
   list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+
+.catalog-dropdown-list a {
+  text-decoration: none;
+  color: #323232;
 }
 
 .user-navigation {
@@ -99,9 +108,20 @@ img {
   font-weight: 500;
 }
 
-.user-navigation a {
+.user-navigation-item {
   color: #ffffff;
   text-decoration: none;
+}
+
+.login-form {
+  background-color: #f8f7f4;
+}
+
+.login-form-link {
+  color: #323232;
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
 }
 
 .header-contacts {
@@ -282,4 +302,18 @@ img {
 
 .copyright-link {
   color: #ffffff;
+}
+
+/* Feedback */
+
+.feedback {
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 6px;
+}
+
+.feedback-text {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
 }

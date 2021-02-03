@@ -19,7 +19,7 @@
 
         <ul class="site-navigation">
           <li><a href="#">Каталог</a>
-            <ul class="catalog-list">
+            <ul class="catalog-dropdown-list">
               <li><a href="#">Новинки</a></li>
               <li><a href="catalog.html">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
@@ -38,8 +38,8 @@
             <button type="submit">Поиск</button>
           </form>
 
-          <a href="#">Вход</a>
-          <form action="https://echo.htmlacademy.ru/" method="post">
+          <a class="user-navigation-item" href="#">Вход</a>
+          <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
             <p>
               <label for="login-login">Логин</label>
               <input id="login-login" type="email" name="login" placeholder="email@example.com">
@@ -48,14 +48,14 @@
               <label for="login-password">Пароль</label>
               <input id="login-password" type="password" name="password" placeholder="......">
             </p>
-            <button type="submit">Войти</button>
+            <button class="button" type="submit">Войти</button>
             <p>
-              <a href="#">Забыли пароль?</a>
-              <a href="#">Новая регистрация</a>
+              <a class="login-form-link" href="#">Забыли пароль?</a>
+              <a class="login-form-link" href="#">Новая регистрация</a>
             </p>
           </form>
 
-          <a href="#">Пусто</a>
+          <a class="user-navigation-item" href="#">Пусто</a>
         </div>
       </nav>
 
@@ -226,9 +226,9 @@
       </p>
     </footer>
 
-    <section>
+    <section class="modal feedback">
       <h2>Форма обратной связи</h2>
-      <p>Мы обязательно вам ответим!</p>
+      <p class="feedback-text">Мы обязательно вам ответим!</p>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <p>
           <label for="feedback-name">Представьтесь</label>
@@ -242,7 +242,7 @@
           <label for="feedback-message">Ваще сообщение</label>
           <textarea id="feedback-message" name="message">В свободной форме</textarea>
         </p>
-        <button type="submit">Отправить</button>
+        <button class="button" type="submit">Отправить</button>
       </form>
     </section>
   </body>
