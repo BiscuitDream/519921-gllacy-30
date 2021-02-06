@@ -137,6 +137,7 @@ img {
 .site-navigation-link-current {
   color: var(--primary-text);
   background-color: var(--bg-link-current);
+  border-radius: 26px;
 }
 
 .catalog-dropdown-list {
@@ -147,10 +148,14 @@ img {
   background-color: var(--bg-dropdown);
 }
 
-.catalog-dropdown-list a {
+.dropdown-link {
   text-decoration: none;
   color: var(--secondary-text);
   /*border: none;*/
+}
+
+.dropdown-link:hover {
+
 }
 
 .user-navigation {
@@ -162,6 +167,8 @@ img {
 .user-navigation-item {
   color: var(--primary-text);
   text-decoration: none;
+  background-color: var(--underline-text);
+  border-radius: 20px;
   /*border: none;*/
 }
 
@@ -174,6 +181,34 @@ img {
   font-size: 13px;
   line-height: 15px;
   font-weight: 400;
+  text-decoration: underline;
+}
+
+.basket-goods {
+  color: var(--secondary-text);
+  background-color: var(--bg-popup);
+}
+
+.cart {
+  color: var(--secondary-text);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  background-color: var(--bg-popup);
+}
+
+.cart-product-image {
+  border-radius: 50%;
+}
+
+.cart-product-price {
+  color: var(--alternative-text);
+}
+
+.cart-total {
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 700;
 }
 
 .header-contacts {
@@ -398,4 +433,57 @@ img {
   font-size: 24px;
   line-height: 28px;
   font-weight: 500;
+}
+
+/* Catalog page */
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+}
+
+/* Breadcrumbs */
+
+.breadcrumbs {
+  list-style: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.breadcrumbs-link {
+  color: var(--primary-text);
+}
+
+/* Filters */
+
+.filters {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters-group {
+  border: none;
+  background-color: var(--underline-text);
+  border-radius: 20px;
+}
+
+.filter-subject {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filters-submit {
+  font: inherit;
+  text-align: center;
+  color: var(--primary-text);
+  vertical-align: middle;
+  border: 2px solid var(--primary-text);
+  border-radius: 20px;
+  background-color: var(--underline-text);
 }
