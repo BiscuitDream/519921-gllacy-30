@@ -30,7 +30,7 @@
   --primary-text: #ffffff;
   --secondary-text: #323232;
   --alternative-text: #5a5a5a;
-  --underline-text: rgba(255, 255, 255, 0.2);
+  --accent-text: rgba(255, 255, 255, 0.2);
 
   --bg-first: #849d8f;
   --bg-second: #8996a6;
@@ -68,7 +68,7 @@ body {
 a {
   /*text-decoration: none;*/
   /*border-bottom: 1px solid var(--underline-text);*/
-  text-decoration: underline var(--underline-text);
+  text-decoration: underline var(--accent-text);
 }
 
 img {
@@ -168,7 +168,7 @@ img {
 .user-navigation-item {
   color: var(--primary-text);
   text-decoration: none;
-  background-color: var(--underline-text);
+  background-color: var(--accent-text);
   border-radius: 20px;
   /*border: none;*/
 }
@@ -470,7 +470,7 @@ img {
 
 .filters-group {
   border: none;
-  background-color: var(--underline-text);
+  background-color: var(--accent-text);
   border-radius: 20px;
 }
 
@@ -486,5 +486,5 @@ img {
   vertical-align: middle;
   border: 2px solid var(--primary-text);
   border-radius: 20px;
-  background-color: var(--underline-text);
+  background-color: var(--accent-text);
 }
