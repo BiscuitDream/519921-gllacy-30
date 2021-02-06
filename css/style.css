@@ -66,8 +66,9 @@ body {
 }
 
 a {
-  text-decoration: none;
-  border-bottom: 1px solid var(--underline-text);
+  /*text-decoration: none;*/
+  /*border-bottom: 1px solid var(--underline-text);*/
+  text-decoration: underline var(--underline-text);
 }
 
 img {
@@ -85,7 +86,7 @@ img {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
-  text-shadow: var(--btn-text-shadow);
+  text-shadow: 0 2px 5px var(--btn-text-shadow);
   vertical-align: middle;
   background-image: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   border: none;
@@ -147,9 +148,9 @@ img {
 }
 
 .catalog-dropdown-list a {
-  /*text-decoration: none;*/
+  text-decoration: none;
   color: var(--secondary-text);
-  border: none;
+  /*border: none;*/
 }
 
 .user-navigation {
@@ -160,8 +161,8 @@ img {
 
 .user-navigation-item {
   color: var(--primary-text);
-  /*text-decoration: none;*/
-  border: none;
+  text-decoration: none;
+  /*border: none;*/
 }
 
 .login-form {
@@ -185,8 +186,8 @@ img {
   font-size: 22px;
   line-height: 24px;
   color: var(--primary-text);
-  /*text-decoration: none;*/
-  border: none;
+  text-decoration: none;
+  /*border: none;*/
 }
 
 /* Slider */
@@ -244,8 +245,8 @@ img {
 
 /* Hits */
 
-.product-item a {
-  /*text-decoration: none;*/
+.product-list {
+  list-style: none;
 }
 
 .product-item-title {
@@ -253,7 +254,8 @@ img {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  text-decoration: underline;
+  /*text-decoration: underline var(--underline-text);*/
+  /*border: inherit;*/
 }
 
 .product-item-image {
@@ -311,7 +313,7 @@ img {
   line-height: 30px;
   font-weight: 700;
   color: var(--secondary-text);
-  border: none;
+  /*border: none;*/
   text-decoration: underline;
 }
 
@@ -347,8 +349,8 @@ img {
   line-height: 24px;
   font-weight: 700;
   color: var(--secondary-text);
-  /*text-decoration: none;*/
-  border: none;
+  text-decoration: none;
+  /*border: none;*/
 }
 
 /* Footer */
@@ -367,6 +369,10 @@ img {
   line-height: 18px;
 }
 
+.footer-info-item a {
+  color: var(--primary-text);
+}
+
 .footer-info-item-favorites {
   font-weight: 700;
 }
@@ -374,10 +380,6 @@ img {
 .footer-copyright {
   font-size: 12px;
   line-height: 18px;
-}
-
-.footer-info-item a {
-  color: var(--primary-text);
 }
 
 .copyright-link {
