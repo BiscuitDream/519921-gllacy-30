@@ -136,6 +136,7 @@ img {
 
 .site-navigation-link-current {
   color: var(--primary-text);
+  text-decoration: none;
   background-color: var(--bg-link-current);
   border-radius: 26px;
 }
