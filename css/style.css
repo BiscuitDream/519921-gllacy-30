@@ -60,17 +60,8 @@
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+html {
+  height: 100%;
 }
 
 body {
@@ -84,6 +75,10 @@ body {
   font-style: normal;
   color: var(--primary-text);
   background-color: var(--bg-first);
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -95,6 +90,19 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Button */
@@ -469,6 +477,12 @@ img {
 
 .copyright-link {
   color: var(--primary-text);
+}
+
+/* Modal */
+
+.modal {
+  display: none;
 }
 
 /* Feedback */
