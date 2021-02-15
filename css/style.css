@@ -269,11 +269,34 @@ img {
   list-style: none;
 }
 
+.slider-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
 .slider-title {
+  width: 680px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   text-align: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 2;
+}
+
+.slider-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  z-index: 1;
+}
+
+.slider-button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  z-index: 3;
 }
 
 .slider-control-list {
