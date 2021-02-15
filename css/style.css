@@ -381,14 +381,20 @@ img {
 /* Banners */
 
 .banners {
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 26px;
 }
 
+.banner {
+  border-radius: 16px;
+}
+
 /* Blog preview */
 
 .blog-preview {
+  padding: 23px 20px;
   color: var(--secondary-text);
   background-color: var(--bg-popup-alternative);
   background-image: url("../img/strawberry-bg.jpg");
@@ -401,6 +407,7 @@ img {
 }
 
 .blog-preview-excerpt {
+  width: 290px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -412,15 +419,21 @@ img {
 /* Mail subscription */
 
 .mail-subscription {
+  padding: 5px;
+  background-image: url("../img/mail-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.mail-subscription-wrapper {
+  padding: 30px 20px;
   background-color: var(--bg-popup);
+  border-radius: 16px;
 }
 
 .mail-subscription-info {
+  margin: 0 0 47px;
   color: var(--alternative-text);
-}
-
-.banner {
-  border-radius: 16px;
 }
 
 /* Map */
