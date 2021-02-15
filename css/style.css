@@ -152,11 +152,32 @@ img {
 
 /* Header */
 
-.site-navigation {
+.page-header {
+  position: relative;
+  padding-top: 10px;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-header-logo {
+  margin-right: 10px;
+}
+
+.site-navigation-list {
+  margin: 0 auto 0 0;
+  padding: 0;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  display: flex;
+}
+
+.site-navigation-item:not(:last-child) {
+  margin-right: 32px;
 }
 
 .site-navigation-link {
@@ -179,6 +200,7 @@ img {
 }
 
 .catalog-dropdown-list {
+  display: none;
   list-style: none;
   font-size: 14px;
   line-height: 16px;
@@ -186,28 +208,41 @@ img {
   background-color: var(--bg-dropdown);
 }
 
-.dropdown-link {
+.catalog-dropdown-link {
   text-decoration: none;
   color: var(--secondary-text);
   /*border: none;*/
 }
 
-.dropdown-link:hover {
+.catalog-dropdown-link:hover {
 
 }
 
 .user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  display: flex;
 }
 
-.user-navigation-item {
+.user-navigation-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.user-navigation-link {
+  padding: 5px;
   color: var(--primary-text);
   text-decoration: none;
   background-color: var(--accent-text);
   border-radius: 20px;
   /*border: none;*/
+}
+
+.user-navigation-dropdown {
+  display: none;
 }
 
 .login-form {
@@ -250,9 +285,16 @@ img {
 }
 
 .header-contacts {
+  margin: 0;
+  position: absolute;
+  right: 27px;
+  bottom: -40px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .header-contacts-tel {

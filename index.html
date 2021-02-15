@@ -17,46 +17,56 @@
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
 
-        <ul class="site-navigation">
-          <li><a class="site-navigation-link" href="#">Каталог</a>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Каталог</a>
             <ul class="catalog-dropdown-list">
-              <li><a class="dropdown-link" href="#">Новинки</a></li>
-              <li><a class="dropdown-link" href="catalog.html">Сливочное</a></li>
-              <li><a class="dropdown-link" href="#">Щербеты</a></li>
-              <li><a class="dropdown-link" href="#">Фруктовый лед</a></li>
-              <li><a class="dropdown-link" href="#">Мелорин</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Новинки</a></li>
+              <li><a class="catalog-dropdown-link" href="catalog.html">Сливочное</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Щербеты</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Фруктовый лед</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a class="site-navigation-link" href="#">Доставка и оплата</a></li>
-          <li><a class="site-navigation-link" href="#">О компании</a></li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">О компании</a>
+          </li>
         </ul>
 
-        <div class="user-navigation">
-          <form action="https://echo.htmlacademy.ru/" method="get">
-            <label for="search-text">Поиск</label>
-            <input id="search-text" type="search" name="search" placeholder="Крем-брюле">
-            <button type="submit">Поиск</button>
-          </form>
-
-          <a class="user-navigation-item" href="#">Вход</a>
-          <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p>
-              <label for="login-login">Логин</label>
-              <input id="login-login" type="email" name="login" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="login-password">Пароль</label>
-              <input id="login-password" type="password" name="password" placeholder="......">
-            </p>
-            <button class="button" type="submit">Войти</button>
-            <p>
-              <a class="login-form-link" href="#">Забыли пароль?</a>
-              <a class="login-form-link" href="#">Новая регистрация</a>
-            </p>
-          </form>
-
-          <a class="user-navigation-item" href="#">Пусто</a>
-        </div>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Поиск</a>
+            <form class="user-navigation-dropdown" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search-text">Поиск</label>
+              <input id="search-text" type="search" name="search" placeholder="Крем-брюле">
+              <button type="submit">Поиск</button>
+            </form>
+          </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Вход</a>
+            <form class="login-form user-navigation-dropdown" action="https://echo.htmlacademy.ru/" method="post">
+              <p>
+                <label for="login-login">Логин</label>
+                <input id="login-login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" type="password" name="password" placeholder="......">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p>
+                <a class="login-form-link" href="#">Забыли пароль?</a>
+                <a class="login-form-link" href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Пусто</a>
+          </li>
+        </ul>
       </nav>
 
       <p class="header-contacts">с 10 до 20, ежедневно <a class="header-contacts-tel" href="tel:88124502525">8 812 450-25-25</a></p>
