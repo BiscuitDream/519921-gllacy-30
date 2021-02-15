@@ -292,6 +292,7 @@ img {
 }
 
 .promotion-item {
+  padding: 22px;
   border-radius: 16px;
 }
 
@@ -310,18 +311,24 @@ img {
 }
 
 .promotion-title {
+  margin: 0 0 16px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
 .promotion-description {
+  margin: 0 0 42px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
 
 /* Hits */
+
+.hits {
+  margin-bottom: 40px;
+}
 
 .product-list {
   margin: 0;
