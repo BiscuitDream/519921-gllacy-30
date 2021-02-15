@@ -426,13 +426,23 @@ img {
 /* Map */
 
 .map {
+  position: relative;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   color: var(--secondary-text);
 }
 
+.map.container {
+  padding: 0;
+}
+
 .map-address {
+  position: absolute;
+  top: 62px;
+  right: 27px;
+  padding: 25px 31px;
+  width: 303px;
   background-color: var(--bg-popup-alternative);
   border-radius: 16px;
 }
