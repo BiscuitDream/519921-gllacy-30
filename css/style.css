@@ -528,6 +528,9 @@ img {
 /* Map */
 
 .map {
+  padding-top: 62px;
+  padding-bottom: 62px;
+  min-height: 430px;
   position: relative;
   text-align: center;
   font-size: 14px;
@@ -535,14 +538,16 @@ img {
   color: var(--secondary-text);
 }
 
-.map.container {
-  padding: 0;
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: bottom;
+  z-index: -1;
 }
 
 .map-address {
-  position: absolute;
-  top: 62px;
-  right: 27px;
+  margin-left: auto;
   padding: 25px 31px;
   width: 303px;
   background-color: var(--bg-popup-alternative);
