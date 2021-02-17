@@ -60,17 +60,8 @@
   box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+html {
+  height: 100%;
 }
 
 body {
@@ -84,6 +75,10 @@ body {
   font-style: normal;
   color: var(--primary-text);
   background-color: var(--bg-first);
+
+  height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 a {
@@ -95,6 +90,19 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Button */
@@ -144,14 +152,35 @@ img {
 
 /* Header */
 
-.site-navigation {
+.page-header {
+  padding-top: 10px;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.main-header-logo {
+  margin-right: 10px;
+}
+
+.site-navigation-list {
+  margin: 0 auto 0 0;
+  padding: 0;
   list-style: none;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
+  display: flex;
+}
+
+.site-navigation-item:not(:last-child) {
+  margin-right: 32px;
 }
 
 .site-navigation-link {
+  display: inline-block;
   color: var(--primary-text);
 }
 
@@ -171,6 +200,7 @@ img {
 }
 
 .catalog-dropdown-list {
+  display: none;
   list-style: none;
   font-size: 14px;
   line-height: 16px;
@@ -178,28 +208,42 @@ img {
   background-color: var(--bg-dropdown);
 }
 
-.dropdown-link {
+.catalog-dropdown-link {
   text-decoration: none;
   color: var(--secondary-text);
   /*border: none;*/
 }
 
-.dropdown-link:hover {
+.catalog-dropdown-link:hover {
 
 }
 
 .user-navigation {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  display: flex;
 }
 
-.user-navigation-item {
+.user-navigation-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.user-navigation-link {
+  display: inline-block;
+  padding: 5px;
   color: var(--primary-text);
   text-decoration: none;
   background-color: var(--accent-text);
   border-radius: 20px;
   /*border: none;*/
+}
+
+.user-navigation-dropdown {
+  display: none;
 }
 
 .login-form {
@@ -242,9 +286,15 @@ img {
 }
 
 .header-contacts {
+  width: 200px;
+  margin: 0 0 -40px auto;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .header-contacts-tel {
@@ -261,11 +311,34 @@ img {
   list-style: none;
 }
 
+.slider-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+}
+
 .slider-title {
+  width: 680px;
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
   text-align: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  z-index: 2;
+}
+
+.slider-image {
+  grid-column: 1 / 2;
+  grid-row: 1 / 4;
+  z-index: 1;
+}
+
+.slider-button {
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  z-index: 3;
 }
 
 .slider-control-list {
@@ -284,6 +357,7 @@ img {
 }
 
 .promotion-item {
+  padding: 22px;
   border-radius: 16px;
 }
 
@@ -302,18 +376,24 @@ img {
 }
 
 .promotion-title {
+  margin: 0 0 16px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
 }
 
 .promotion-description {
+  margin: 0 0 42px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 700;
 }
 
 /* Hits */
+
+.hits {
+  margin-bottom: 40px;
+}
 
 .product-list {
   margin: 0;
@@ -352,6 +432,8 @@ img {
 /* Advantages */
 
 .advantages {
+  margin-bottom: 40px;
+  padding: 20px;
   color: var(--secondary-text);
   background-color: var(--bg-pic-waffle);
   background-image: url("../img/waffle-pattern-bg.jpg");
@@ -361,26 +443,47 @@ img {
 }
 
 .advantages-lead {
+  margin: 0 0 21px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
 }
 
 .advantages-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 27px;
+}
+
+.advantages-item {
+  margin-bottom: 31px;
+  padding-left: 54px;
+}
+
+.advantages-item p {
+  margin: 0;
 }
 
 /* Banners */
 
 .banners {
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 26px;
 }
 
+.banner {
+  border-radius: 16px;
+}
+
 /* Blog preview */
 
 .blog-preview {
+  padding: 23px 20px;
   color: var(--secondary-text);
   background-color: var(--bg-popup-alternative);
   background-image: url("../img/strawberry-bg.jpg");
@@ -393,6 +496,7 @@ img {
 }
 
 .blog-preview-excerpt {
+  width: 290px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
@@ -404,27 +508,48 @@ img {
 /* Mail subscription */
 
 .mail-subscription {
+  padding: 5px;
+  background-image: url("../img/mail-bg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.mail-subscription-wrapper {
+  padding: 30px 20px;
   background-color: var(--bg-popup);
+  border-radius: 16px;
 }
 
 .mail-subscription-info {
+  margin: 0 0 47px;
   color: var(--alternative-text);
-}
-
-.banner {
-  border-radius: 16px;
 }
 
 /* Map */
 
 .map {
+  padding-top: 62px;
+  padding-bottom: 62px;
+  min-height: 430px;
+  position: relative;
   text-align: center;
   font-size: 14px;
   line-height: 20px;
   color: var(--secondary-text);
 }
 
+.map img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  vertical-align: bottom;
+  z-index: -1;
+}
+
 .map-address {
+  margin-left: auto;
+  padding: 25px 31px;
+  width: 303px;
   background-color: var(--bg-popup-alternative);
   border-radius: 16px;
 }
@@ -440,8 +565,24 @@ img {
 
 /* Footer */
 
+.page-footer {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .social-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-list a {
@@ -449,9 +590,14 @@ img {
 }
 
 .footer-info-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
   font-size: 13px;
   line-height: 18px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 30px;
 }
 
 .footer-info-item a {
@@ -467,8 +613,18 @@ img {
   line-height: 18px;
 }
 
+.copyright-text {
+  margin: 0;
+}
+
 .copyright-link {
   color: var(--primary-text);
+}
+
+/* Modal */
+
+.modal {
+  display: none;
 }
 
 /* Feedback */

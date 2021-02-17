@@ -17,69 +17,79 @@
           <img src="img/gllacy-logo.svg" width="154" height="64" alt="Логотип магазина Глейси">
         </a>
 
-        <ul class="site-navigation">
-          <li><a class="site-navigation-link site-navigation-link-current">Каталог</a>
+        <ul class="site-navigation-list">
+          <li class="site-navigation-item">
+            <a class="site-navigation-link site-navigation-link-current">Каталог</a>
             <ul class="catalog-dropdown-list">
-              <li><a class="dropdown-link" href="#">Новинки</a></li>
-              <li><a class="dropdown-link">Сливочное</a></li>
-              <li><a class="dropdown-link" href="#">Щербеты</a></li>
-              <li><a class="dropdown-link" href="#">Фруктовый лед</a></li>
-              <li><a class="dropdown-link" href="#">Мелорин</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Новинки</a></li>
+              <li><a class="catalog-dropdown-link">Сливочное</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Щербеты</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Фруктовый лед</a></li>
+              <li><a class="catalog-dropdown-link" href="#">Мелорин</a></li>
             </ul>
           </li>
-          <li><a class="site-navigation-link" href="#">Доставка и оплата</a></li>
-          <li><a class="site-navigation-link" href="#">О компании</a></li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link" href="#">О компании</a>
+          </li>
         </ul>
 
-        <div class="user-navigation">
-          <form action="https://echo.htmlacademy.ru/" method="get">
-            <label class="user-navigation-item" for="search-text">Поиск</label>
-            <input id="search-text" type="search" name="search" placeholder="Крем-брюле">
-            <button type="submit">Поиск</button>
-          </form>
-
-          <a class="user-navigation-item" href="#">Вход</a>
-          <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p>
-              <label for="login-login">Логин</label>
-              <input id="login-login" type="email" name="login" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="login-password">Пароль</label>
-              <input id="login-password" type="password" name="password" placeholder="......">
-            </p>
-            <button class="button" type="submit">Войти</button>
-            <p>
-              <a class="login-form-link" href="#">Забыли пароль?</a>
-              <a class="login-form-link" href="#">Новая регистрация</a>
-            </p>
-          </form>
-
-          <a class="user-navigation-item basket-goods" href="#">2 товара</a>
-          <div class="cart">
-            <table>
-              <tr>
-                <td><button type="button">Убрать товар</button></td>
-                <td><img class="cart-product-image" src="img/ice-cream-orange-jam-citrus-shavings.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                <td>Пломбир с апельсиновым джемом</td>
-                <td>1,5 кг х <span class="cart-product-price">200 руб.</span></td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td><button type="button">Убрать товар</button></td>
-                <td><img class="cart-product-image" src="img/ice-cream-strawberry-white-chocolate.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                <td>1,5 кг х <span class="cart-product-price">300 руб.</span></td>
-                <td>450 руб.</td>
-              </tr>
-              <tr class="cart-total">
-                <td colspan="4">Итого:</td>
-                <td>750 руб.</td>
-              </tr>
-            </table>
-            <a class="button" href="#">Оформить заказ</a>
-          </div>
-        </div>
+        <ul class="user-navigation">
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Поиск</a>
+            <form class="user-navigation-dropdown" action="https://echo.htmlacademy.ru/" method="get">
+              <label for="search-text">Поиск</label>
+              <input id="search-text" type="search" name="search" placeholder="Крем-брюле">
+              <button type="submit">Поиск</button>
+            </form>
+          </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link" href="#">Вход</a>
+            <form class="login-form user-navigation-dropdown" action="https://echo.htmlacademy.ru/" method="post">
+              <p>
+                <label for="login-login">Логин</label>
+                <input id="login-login" type="email" name="login" placeholder="email@example.com">
+              </p>
+              <p>
+                <label for="login-password">Пароль</label>
+                <input id="login-password" type="password" name="password" placeholder="......">
+              </p>
+              <button class="button" type="submit">Войти</button>
+              <p>
+                <a class="login-form-link" href="#">Забыли пароль?</a>
+                <a class="login-form-link" href="#">Новая регистрация</a>
+              </p>
+            </form>
+          </li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-link basket-goods" href="#">2 товара</a>
+            <div class="cart user-navigation-dropdown">
+              <table>
+                <tr>
+                  <td><button type="button">Убрать товар</button></td>
+                  <td><img class="cart-product-image" src="img/ice-cream-orange-jam-citrus-shavings.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span class="cart-product-price">200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button type="button">Убрать товар</button></td>
+                  <td><img class="cart-product-image" src="img/ice-cream-strawberry-white-chocolate.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span class="cart-product-price">300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr class="cart-total">
+                  <td colspan="4">Итого:</td>
+                  <td>750 руб.</td>
+                </tr>
+              </table>
+              <a class="button" href="#">Оформить заказ</a>
+            </div>
+          </li>
+        </ul>
       </nav>
 
       <p class="header-contacts">с 10 до 20, ежедневно <a class="header-contacts-tel" href="tel:88124502525">8 812 450-25-25</a></p>
@@ -297,9 +307,9 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="footer-socials">
-        <h2>Наши соцсети</h2>
+        <h2 class="visually-hidden">Наши соцсети</h2>
         <ul class="social-list">
           <li class="social-item"><a href="#">Facebook</a></li>
           <li class="social-item"><a href="#">VK</a></li>
@@ -308,19 +318,23 @@
         </ul>
       </section>
 
-      <ul class="footer-info-list">
-        <li class="footer-info-item footer-info-item-favorites"><a href="#">Для поставщиков</a></li>
-        <li class="footer-info-item"><a href="#">О производстве</a></li>
-        <li class="footer-info-item"><a href="#">Наши документы</a></li>
-        <li class="footer-info-item"><a href="#">Экологические стандарты</a></li>
-      </ul>
+      <section>
+        <h2 class="visually-hidden">Информация</h2>
+        <ul class="footer-info-list">
+          <li class="footer-info-item footer-info-item-favorites"><a href="#">Для поставщиков</a></li>
+          <li class="footer-info-item"><a href="#">Наши документы</a></li>
+          <li class="footer-info-item"><a href="#">О производстве</a></li>
+          <li class="footer-info-item"><a href="#">Экологические стандарты</a></li>
+        </ul>
+      </section>
 
-      <p class="footer-copyright">
+      <section class="footer-copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/htmlacademy-logo.svg" width="108" height="39" alt="Логотип компании HTML Academy">
         </a>
-        Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-      </p>
+        <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
+      </section>
     </footer>
   </body>
 </html>
