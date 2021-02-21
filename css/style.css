@@ -13,7 +13,7 @@
   font-style: normal;
   font-weight: 500;
   src: url("../fonts/robotomedium.woff2") format("woff2"),
-  url("../fonts/robotomedium.woff2") format("woff");
+    url("../fonts/robotomedium.woff2") format("woff");
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/robotobold.woff2") format("woff2"),
-  url("../fonts/robotobold.woff2") format("woff");
+    url("../fonts/robotobold.woff2") format("woff");
 }
 
 /* Variables */
@@ -218,9 +218,9 @@ img {
   /*border: none;*/
 }
 
-.catalog-dropdown-link:hover {
+/*.catalog-dropdown-link:hover {*/
 
-}
+/*}*/
 
 .user-navigation {
   margin: 0;
