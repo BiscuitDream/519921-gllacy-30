@@ -285,12 +285,16 @@ img {
 }
 
 .user-navigation-item:not(:last-child) {
+  position: relative;
+
   margin-right: 10px;
 }
 
 .user-navigation-link {
-  display: inline-block;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
   border-radius: 20px;
 
   color: var(--primary-text);
@@ -299,12 +303,53 @@ img {
   background-color: var(--accent-text);
 }
 
+.user-navigation-link:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.user-navigation-link span {
+  margin-left: 8px;
+}
+
+.user-navigation-link:hover path {
+  fill: #323232;
+}
+
 .user-navigation-dropdown {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 5;
+
   display: none;
+  padding: 20px;
+  border-radius: 4px;
+
+  background-color: #f8f7f4;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.user-navigation-dropdown input {
+  width: 100%;
+  padding: 15px;
+}
+
+.user-navigation-item:hover .user-navigation-dropdown {
+  display: block;
+}
+
+.search-form {
+  width: 341px;
 }
 
 .login-form {
-  background-color: var(--bg-popup);
+  width: 227px;
+}
+
+.login-form p {
+  margin: 0 0 10px;
 }
 
 .login-form-link {
