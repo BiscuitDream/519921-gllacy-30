@@ -545,15 +545,17 @@ img {
 }
 
 .catalog {
+  margin-bottom: 80px;
   padding-top: 40px;
   padding-bottom: 30px;
 }
 
 .product-list {
   display: grid;
+  grid-row-gap: 40px;
   grid-column-gap: 26px;
   grid-template-columns: repeat(4, 1fr);
-  margin: 0 0 80px;
+  margin: 0;
   padding: 0;
 
   list-style: none;
