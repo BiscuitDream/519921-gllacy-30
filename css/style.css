@@ -284,9 +284,11 @@ img {
   list-style: none;
 }
 
-.user-navigation-item:not(:last-child) {
+.user-navigation-item {
   position: relative;
+}
 
+.user-navigation-item:not(:last-child) {
   margin-right: 10px;
 }
 
