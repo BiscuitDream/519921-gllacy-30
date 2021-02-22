@@ -587,14 +587,14 @@ img {
   order: 3;
   margin: 0 0 15px;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
 }
 
 .product-item-title a {
   color: var(--primary-text);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 22px;
 }
 
 .product-item-image {
