@@ -191,6 +191,10 @@ img {
   margin-right: 32px;
 }
 
+.site-navigation-item-dropdown {
+  position: relative;
+}
+
 .site-navigation-link {
   display: inline-block;
 
@@ -202,7 +206,7 @@ img {
   border-radius: 26px;
 
   color: var(--secondary-text);
-  /*text-decoration: none;*/
+
   background-color: var(--bg-link-hover);
 }
 
@@ -216,7 +220,15 @@ img {
 }
 
 .catalog-dropdown-list {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  z-index: 10;
+
   display: none;
+  min-width: 143px;
+  padding: 0;
+  border-radius: 4px;
 
   font-weight: 400;
   font-size: 14px;
@@ -224,12 +236,40 @@ img {
 
   list-style: none;
   background-color: var(--bg-dropdown);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+}
+
+.site-navigation-item-dropdown:hover .catalog-dropdown-list {
+  display: block;
+}
+
+.catalog-dropdown-item {
+  /*padding-top: 10px;*/
 }
 
 .catalog-dropdown-link {
+  display: block;
+  padding: 10px 20px;
+
   color: var(--secondary-text);
   text-decoration: none;
-  /*border: none;*/
+}
+
+.catalog-dropdown-link:hover {
+  background-color: #fbded7;
+}
+
+.catalog-dropdown-link:active {
+  background-color: #f6b5a5;
+}
+
+.catalog-dropdown-link-accent {
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.catalog-dropdown-link-current {
+  background-color: #d07058;
 }
 
 .user-navigation {
@@ -257,7 +297,6 @@ img {
   text-decoration: none;
 
   background-color: var(--accent-text);
-  /*border: none;*/
 }
 
 .user-navigation-dropdown {
@@ -323,7 +362,6 @@ img {
   font-size: 22px;
   line-height: 24px;
   text-decoration: none;
-  /*border: none;*/
 }
 
 /* Slider */
@@ -438,13 +476,30 @@ img {
   list-style: none;
 }
 
+.product-item-hit {
+  position: relative;
+}
+
+.product-item-hit::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/icons/hit-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  content: "";
+}
+
 .product-item-title {
   color: var(--primary-text);
   font-weight: 500;
   font-size: 16px;
   line-height: 22px;
-  /*text-decoration: underline var(--underline-text);*/
-  /*border: inherit;*/
 }
 
 .product-item-image {
@@ -574,7 +629,6 @@ img {
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
-  /*border: none;*/
   text-decoration: underline;
 }
 
@@ -640,7 +694,6 @@ img {
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
-  /*border: none;*/
 }
 
 /* Footer */
