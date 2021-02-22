@@ -411,7 +411,16 @@ img {
 
 /* Slider */
 
+.slider {
+  position: relative;
+
+  margin-bottom: 40px;
+}
+
 .slider-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -450,7 +459,32 @@ img {
 }
 
 .slider-control-list {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.slider-control-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider-toggle {
+  width: 21px;
+  height: 21px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+.slider-toggle-current {
+  background-color: #ffffff;
 }
 
 /* Promotions */
