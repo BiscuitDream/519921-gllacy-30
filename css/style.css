@@ -113,7 +113,7 @@ img {
 
 .button {
   display: inline-block;
-  padding: 9px 23px;
+  padding: 12px 22px;
   border: none;
   border-radius: 70px;
   cursor: pointer;
@@ -132,6 +132,8 @@ img {
 }
 
 .button-slider {
+  padding: 9px 23px;
+
   font-size: 32px;
   line-height: 44px;
   letter-spacing: 0.05em;
@@ -537,11 +539,7 @@ img {
 }
 
 .promotion-item {
-  /*padding: 22px;*/
-  padding-top: 14px;
-  padding-left: 16px;
-  padding-right: 30px;
-  padding-bottom: 22px;
+  padding: 14px 22px 22px 16px;
   border-radius: 16px;
 }
 
@@ -568,7 +566,7 @@ img {
 }
 
 .promotion-description {
-  margin: 0 0 42px;
+  margin: 0 0 43px;
 
   font-weight: 700;
   font-size: 18px;
@@ -576,8 +574,9 @@ img {
 }
 
 .promotion-button {
-  /*margin-left: auto;*/
-  /*text-align: right;*/
+  display: block;
+  width: max-content;
+  margin-left: auto;
 }
 
 /* Hits */
