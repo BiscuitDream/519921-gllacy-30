@@ -780,14 +780,11 @@ img {
   margin-bottom: 40px;
 }
 
-.banner {
-  border-radius: 16px;
-}
-
 /* Blog preview */
 
 .blog-preview {
-  padding: 23px 20px;
+  padding: 18px 20px;
+  border-radius: 16px;
 
   color: var(--secondary-text);
 
@@ -798,6 +795,8 @@ img {
 }
 
 .blog-preview-lead {
+  margin: 0 0 2px;
+
   font-weight: 500;
 }
 
@@ -815,6 +814,7 @@ img {
 
 .mail-subscription {
   padding: 5px;
+  border-radius: 16px;
 
   background-image: url("../img/mail-bg.png");
   background-repeat: no-repeat;
@@ -822,16 +822,39 @@ img {
 }
 
 .mail-subscription-wrapper {
-  padding: 30px 20px;
+  padding: 24px 20px 36px;
   border-radius: 16px;
 
   background-color: var(--bg-popup);
 }
 
 .mail-subscription-info {
-  margin: 0 0 47px;
+  margin: 0 0 40px;
 
   color: var(--alternative-text);
+}
+
+.mail-subscription-form {
+  display: flex;
+}
+
+.mail-subscription-input {
+  flex-grow: 1;
+  padding: 5px 14px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 6px;
+
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mail-subscription-input::placeholder {
+  color: #999999;
+}
+
+.mail-subscription-button {
+  margin-left: 10px;
+  padding: 10px 20px;
 }
 
 /* Map */
