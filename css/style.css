@@ -112,9 +112,11 @@ img {
 /* Button */
 
 .button {
+  display: inline-block;
+  padding: 9px 23px;
   border: none;
-  border-radius: 50px;
-
+  border-radius: 70px;
+  cursor: pointer;
   color: var(--primary-text);
   /*font: inherit;*/
   font-weight: 700;
@@ -123,10 +125,16 @@ img {
   text-align: center;
   text-decoration: none;
   text-shadow: 0 2px 5px var(--btn-text-shadow);
-  vertical-align: middle;
-
+  /*vertical-align: middle;*/
+  /*background: #f26843;*/
   background-image: linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+}
+
+.button-slider {
+  font-size: 32px;
+  line-height: 44px;
+  letter-spacing: 0.05em;
 }
 
 .button:hover {
@@ -137,15 +145,10 @@ img {
 }
 
 .button:active {
-  background:
+  background-image:
     linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
     linear-gradient(180deg, #f26843 0%, #e74a35 100%);
   box-shadow: inset 0 2px 2px #942718;
-}
-
-.button-slider {
-  font-size: 32px;
-  line-height: 44px;
 }
 
 /* Container */
@@ -159,7 +162,8 @@ img {
 /* Header */
 
 .page-header {
-  padding-top: 10px;
+  margin-bottom: -41px;
+  padding-top: 8px;
 }
 
 .main-navigation {
@@ -168,7 +172,7 @@ img {
 }
 
 .main-header-logo {
-  margin-right: 10px;
+  margin-right: 12px;
 }
 
 .main-header-logo img {
@@ -178,7 +182,7 @@ img {
 .site-navigation-list {
   display: flex;
   margin: 0 auto 0 0;
-  padding: 0;
+  padding: 0 0 6px;
 
   font-weight: 700;
   font-size: 16px;
@@ -188,7 +192,7 @@ img {
 }
 
 .site-navigation-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 6px;
 }
 
 .site-navigation-item-dropdown {
@@ -197,22 +201,24 @@ img {
 
 .site-navigation-link {
   display: inline-block;
+  padding: 10px 13px;
+  border-radius: 26px;
 
   color: var(--primary-text);
 }
 
 .site-navigation-link:hover,
 .site-navigation-link:active {
-  border-radius: 26px;
-
   color: var(--secondary-text);
 
   background-color: var(--bg-link-hover);
 }
 
-.site-navigation-link-current {
-  border-radius: 26px;
+.site-navigation-link:active {
+  box-shadow: inset 0 2px 1px #696969;
+}
 
+.site-navigation-link-current {
   color: var(--primary-text);
   text-decoration: none;
 
@@ -242,6 +248,16 @@ img {
 .site-navigation-item-dropdown:hover .catalog-dropdown-list {
   display: block;
 }
+
+/*.site-navigation-item-dropdown::before {*/
+/*  content: "";*/
+/*  display: block;*/
+/*  position: absolute;*/
+/*  background-color: #fff;*/
+/*  width: 10px;*/
+/*  height: 5px;*/
+/*  bottom: 0;*/
+/*}*/
 
 .catalog-dropdown-item {
   /*padding-top: 10px;*/
@@ -296,13 +312,17 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 6px 16px;
   border-radius: 20px;
 
   color: var(--primary-text);
   text-decoration: none;
 
   background-color: var(--accent-text);
+}
+
+.user-navigation-link-no-text {
+  padding: 8px;
 }
 
 .user-navigation-link:hover {
@@ -396,12 +416,17 @@ img {
   flex-direction: column;
   align-items: flex-end;
   width: 200px;
-  margin: 0 0 -40px auto;
+  margin: 0 0 0 auto;
+  padding-top: 3px;
 
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   text-align: end;
+}
+
+.header-contacts span {
+  margin-bottom: 7px;
 }
 
 .header-contacts-tel {
@@ -416,7 +441,7 @@ img {
 .slider {
   position: relative;
 
-  margin-bottom: 40px;
+  margin-bottom: -19px;
 }
 
 .slider-list {
@@ -439,6 +464,7 @@ img {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   width: 680px;
+  margin: 0 0 28px;
 
   font-weight: 700;
   font-size: 60px;
@@ -458,11 +484,12 @@ img {
 
   grid-row: 3 / 4;
   grid-column: 1 / 2;
+  margin-bottom: 60px;
 }
 
 .slider-control-list {
   position: absolute;
-  bottom: 10px;
+  bottom: 82px;
   left: 0;
 
   display: flex;
@@ -479,6 +506,7 @@ img {
 .slider-toggle {
   width: 21px;
   height: 21px;
+  padding: 0;
   border: 2px solid #ffffff;
   border-radius: 50%;
 
@@ -492,6 +520,9 @@ img {
 /* Promotions */
 
 .promotions {
+  position: relative;
+  z-index: 10;
+
   margin-bottom: 40px;
 }
 
@@ -506,7 +537,11 @@ img {
 }
 
 .promotion-item {
-  padding: 22px;
+  /*padding: 22px;*/
+  padding-top: 14px;
+  padding-left: 16px;
+  padding-right: 30px;
+  padding-bottom: 22px;
   border-radius: 16px;
 }
 
@@ -525,7 +560,7 @@ img {
 }
 
 .promotion-title {
-  margin: 0 0 16px;
+  margin: 0 0 17px;
 
   font-weight: 700;
   font-size: 35px;
@@ -538,6 +573,11 @@ img {
   font-weight: 700;
   font-size: 18px;
   line-height: 22px;
+}
+
+.promotion-button {
+  /*margin-left: auto;*/
+  /*text-align: right;*/
 }
 
 /* Hits */
