@@ -698,7 +698,7 @@ img {
 
 .advantages {
   margin-bottom: 40px;
-  padding: 20px;
+  padding: 24px 25px 30px 20px;
   border-radius: 16px;
 
   color: var(--secondary-text);
@@ -710,7 +710,7 @@ img {
 }
 
 .advantages-lead {
-  margin: 0 0 21px;
+  margin: 0 0 16px;
 
   font-weight: 500;
   font-size: 24px;
@@ -719,6 +719,7 @@ img {
 
 .advantages-list {
   display: grid;
+  grid-row-gap: 22px;
   grid-column-gap: 27px;
   grid-template-columns: 1fr 1fr;
   margin: 0;
@@ -730,13 +731,12 @@ img {
 .advantages-item {
   position: relative;
 
-  margin-bottom: 31px;
-  padding-left: 54px;
+  padding-left: 55px;
 }
 
 .advantages-item::before {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
 
   width: 49px;
