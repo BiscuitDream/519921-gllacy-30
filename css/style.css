@@ -132,6 +132,7 @@ img {
 }
 
 .button-slider {
+  margin-left: -15px;
   padding: 9px 23px;
 
   font-size: 32px;
