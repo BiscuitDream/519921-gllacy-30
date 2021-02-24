@@ -865,37 +865,75 @@ img {
   min-height: 430px;
   padding-top: 62px;
   padding-bottom: 62px;
-
-  color: var(--secondary-text);
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
 }
 
-.map img {
+.map-picture {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
 
+  width: 1200px;
+  height: 430px;
+
   vertical-align: bottom;
 }
 
-.map-address {
+.map::before {
+  position: absolute;
+  top: 136px;
+  left: 266px;
+
+  display: block;
+  width: 80px;
+  height: 140px;
+
+  background-image: url("../img/pin.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  content: "";
+}
+
+.map-contacts {
   width: 303px;
   margin-left: auto;
-  padding: 25px 31px;
+  padding: 29px 25px;
   border-radius: 16px;
+
+  color: var(--secondary-text);
+  font-size: 14px;
+  line-height: 20px;
 
   background-color: var(--bg-popup-alternative);
 }
 
-.map-address-contact {
+.map-contacts-caption {
+  margin: 0;
+}
+
+.map-contacts-address {
+  margin: 0 0 22px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.map-contacts-phone {
+  margin: 0 0 29px;
+}
+
+.map-contacts-phone-number {
   color: var(--secondary-text);
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   text-decoration: none;
+}
+
+.map-contacts-button {
+  padding: 10px 28px;
 }
 
 /* Footer */
