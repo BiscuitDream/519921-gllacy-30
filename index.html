@@ -69,19 +69,21 @@
               <span>Вход</span>
             </a>
             <form class="user-navigation-dropdown login-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p>
+              <p class="login-form-item">
                 <label class="visually-hidden" for="login-login">Логин</label>
                 <input id="login-login" type="email" name="login" placeholder="email@example.com">
               </p>
-              <p>
+              <p class="login-form-item">
                 <label class="visually-hidden" for="login-password">Пароль</label>
                 <input id="login-password" type="password" name="password" placeholder="......">
               </p>
-              <button class="button" type="submit">Войти</button>
-              <p>
-                <a class="login-form-link" href="#">Забыли пароль?</a>
-                <a class="login-form-link" href="#">Новая регистрация</a>
-              </p>
+              <div class="login-form-wrapper">
+                <button class="login-form-button button" type="submit">Войти</button>
+                <p class="login-form-links">
+                  <a class="login-form-link" href="#">Забыли пароль?</a>
+                  <a class="login-form-link" href="#">Новая регистрация</a>
+                </p>
+              </div>
             </form>
           </li>
           <li class="user-navigation-item">

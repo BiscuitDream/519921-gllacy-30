@@ -403,11 +403,28 @@ img {
 }
 
 .login-form {
-  width: 227px;
+  width: 277px;
 }
 
-.login-form p {
-  margin: 0 0 10px;
+.login-form-item {
+  margin: 0 0 20px;
+}
+
+.login-form-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.login-form-button {
+  padding: 10px 26px;
+}
+
+.login-form-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
 }
 
 .login-form-link {
@@ -416,6 +433,10 @@ img {
   font-size: 13px;
   line-height: 15px;
   text-decoration: underline;
+}
+
+.login-form-link:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .basket-goods {
