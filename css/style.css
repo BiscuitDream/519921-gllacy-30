@@ -364,12 +364,12 @@ img {
 
 .user-navigation-dropdown {
   position: absolute;
-  top: 40px;
-  right: 0;
+  top: 35px;
+  right: 1px;
   z-index: 5;
 
   display: none;
-  padding: 20px;
+  padding: 20px 15px;
   border-radius: 4px;
 
   background-color: #f8f7f4;
@@ -378,11 +378,24 @@ img {
 
 .user-navigation-dropdown input {
   width: 100%;
-  padding: 15px;
+  padding: 12px;
 }
 
 .user-navigation-item:hover .user-navigation-dropdown {
   display: block;
+}
+
+.user-navigation-item::before {
+  position: absolute;
+  bottom: -3px;
+
+  display: block;
+  width: 100%;
+  height: 10px;
+
+  background-color: transparent;
+
+  content: "";
 }
 
 .search-form {
