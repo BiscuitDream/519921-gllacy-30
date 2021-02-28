@@ -1274,7 +1274,7 @@ img {
 }
 
 .input-checkbox:checked + label::before {
-  background-image: url("../img/icons/checkbox-on-icon.svg");
+  background-image: url("../img/icons/checkbox-on-corrected-icon.svg");
 }
 
 .input-checkbox:hover + label::before {
