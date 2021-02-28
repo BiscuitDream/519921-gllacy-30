@@ -1199,8 +1199,55 @@ img {
   list-style: none;
 }
 
-.filters-list li:not(:last-child) {
+.filter-option:not(:last-child) {
   margin-right: 20px;
+}
+
+.input-radio + label {
+  position: relative;
+
+  padding-left: 35px;
+}
+
+.input-radio + label::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  width: 22px;
+  height: 22px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+
+  transform: translateY(-50%);
+  opacity: 0.8;
+
+  content: "";
+}
+
+.input-radio:checked + label::after {
+  position: absolute;
+  top: 50%;
+  left: 7px;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+
+  background-color: #ffffff;
+  transform: translateY(-50%);
+  opacity: 0.8;
+
+  content: "";
+}
+
+.input-radio + label:hover::before,
+.input-radio:checked + label:hover::after {
+  opacity: 1;
+}
+
+.input-radio:disabled + label {
+  opacity: 0.4;
 }
 
 .filters-group {
