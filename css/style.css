@@ -1188,25 +1188,28 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 870px;
+  width: 890px;
 }
 
 .filters-list {
   display: flex;
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
+  padding: 9px 15px;
+  border-radius: 20px;
 
   list-style: none;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter-option:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 19px;
 }
 
 .input-radio + label {
   position: relative;
 
-  padding-left: 35px;
+  padding-left: 33px;
 }
 
 .input-radio + label::before {
@@ -1290,7 +1293,7 @@ img {
   /*margin: 0 15px 14px 0;*/
   /*padding: 5px;*/
   margin: 0;
-  margin-right: 11px;
+  margin-right: 13px;
   padding: 0;
   border: none;
   /*border-radius: 20px;*/
