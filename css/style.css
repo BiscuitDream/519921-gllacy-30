@@ -1129,7 +1129,7 @@ img {
 /* Catalog page */
 
 .page-title {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
 
   font-weight: 700;
   font-size: 35px;
@@ -1302,6 +1302,10 @@ img {
 }
 
 .filter-subject {
+  display: block;
+  margin-bottom: 7px;
+  margin-left: 16px;
+
   font-size: 14px;
   line-height: 16px;
 }
