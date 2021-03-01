@@ -158,8 +158,20 @@
             </fieldset>
 
             <fieldset class="filters-group filters-group-small">
-              <label class="filter-subject" for="filter-range">Цена: 100 ₽ – 500 ₽</label>
-              <input id="filter-range" type="range" name="range" min="100" max="500">
+              <div class="range-filter">
+                <div class="price-controls">
+                  <p class="filter-subject">Цена: <label><input class="price-input" id="filter-price-min" type="text" name="price-min" value="100"> ₽ – </label>
+                    <label><input class="price-input" id="filter-price-max" type="text" name="price-max" value="500"> ₽</label>
+                  </p>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min" tabindex="0"></div>
+                  <div class="toggle toggle-max" tabindex="0"></div>
+                </div>
+              </div>
             </fieldset>
 
             <fieldset class="filters-group">
