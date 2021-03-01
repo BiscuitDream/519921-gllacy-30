@@ -1129,7 +1129,7 @@ img {
 /* Catalog page */
 
 .page-title {
-  margin: 0 0 25px;
+  margin: 0 0 28px;
 
   font-weight: 700;
   font-size: 35px;
@@ -1189,6 +1189,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
   width: 890px;
+  margin-bottom: -14px;
 }
 
 .filters-radio-list {
@@ -1211,6 +1212,7 @@ img {
   margin: 0;
   /*padding: 0;*/
   padding: 9px 16px;
+  padding-right: 22px;
   border-radius: 20px;
 
   list-style: none;
@@ -1218,7 +1220,7 @@ img {
 }
 
 .filter-checkbox-option:not(:last-child) {
-  margin-right: 23px;
+  margin-right: 25px;
 }
 
 .input-radio + label {
@@ -1271,7 +1273,7 @@ img {
 .input-checkbox + label {
   position: relative;
 
-  padding-left: 32px;
+  padding-left: 30px;
 }
 
 .input-checkbox + label::before {
@@ -1323,9 +1325,7 @@ img {
 
 .filter-subject {
   display: block;
-  margin: 0;
-  margin-bottom: 7px;
-  margin-left: 16px;
+  margin: 0 0 7px 16px;
 
   font-size: 14px;
   line-height: 16px;
@@ -1422,6 +1422,8 @@ img {
 }
 
 .filters-submit {
+  margin-top: 11px;
+  padding: 6px 28px 8px;
   border: 2px solid var(--primary-text);
   border-radius: 20px;
 
