@@ -404,8 +404,20 @@ img {
 .user-navigation-dropdown input {
   width: 100%;
   padding: 12px;
-  border: 1px solid #d3d3d2;
+  border: 1px solid rgba(178, 178, 178, 0.52);
   border-radius: 4px;
+}
+
+.user-navigation-dropdown input:hover {
+  padding: 11px;
+  border: 2px solid rgba(178, 178, 178, 0.52);
+}
+
+.user-navigation-dropdown input:focus {
+  padding: 11px;
+  border: 2px solid rgba(46, 136, 228, 0.52);
+
+  outline: none;
 }
 
 .user-navigation-item:hover .user-navigation-dropdown {
