@@ -390,6 +390,7 @@ img {
 .user-navigation-dropdown input {
   width: 100%;
   padding: 12px;
+  border: 1px solid #d3d3d2;
 }
 
 .user-navigation-item:hover .user-navigation-dropdown {
@@ -450,11 +451,11 @@ img {
   margin-bottom: 5px;
 }
 
-.basket-goods {
-  color: var(--secondary-text);
+/*.basket-goods {*/
+/*  color: var(--secondary-text);*/
 
-  background-color: var(--bg-popup);
-}
+/*  background-color: var(--bg-popup);*/
+/*}*/
 
 .cart {
   color: var(--secondary-text);
