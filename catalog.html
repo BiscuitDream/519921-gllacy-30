@@ -159,12 +159,17 @@
           <form class="filters-form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filters-group filters-group-small">
               <label class="filter-subject" for="filter-sorting">Сортировка:</label>
-              <select class="filter-select" id="filter-sorting" name="sorting">
-                <option value="popular" selected>по популярности</option>
-                <option value="price-incr">сначала недорогие</option>
-                <option value="price-decr">сначала дорогие</option>
-                <option value="fat">по жирности</option>
-              </select>
+              <div class="filter-select-wrapper">
+                <select class="filter-select" id="filter-sorting" name="sorting">
+                  <option value="popular" selected>по популярности</option>
+                  <option value="price-incr">сначала недорогие</option>
+                  <option value="price-decr">сначала дорогие</option>
+                  <option value="fat">по жирности</option>
+                </select>
+                <svg class="filter-select-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
+                </svg>
+              </div>
             </fieldset>
 
             <fieldset class="filters-group filters-group-small">

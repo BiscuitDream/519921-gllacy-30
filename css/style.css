@@ -1433,6 +1433,10 @@ img {
   line-height: 16px;
 }
 
+.filter-select-wrapper {
+  position: relative;
+}
+
 .filter-select {
   min-width: 196px;
   padding: 9px 30px 9px 16px;
@@ -1444,11 +1448,27 @@ img {
   text-align: left;
 
   background-color: rgba(255, 255, 255, 0.2);
-  background-image: url("../img/icons/select-arrow-icon.svg");
-  background-repeat: no-repeat;
-  background-position: right 14px top 50%;
+  /*background-image: url("../img/icons/select-arrow-icon.svg");*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: right 14px top 50%;*/
 
   appearance: none;
+}
+
+.filter-select:hover {
+  color: #323232;
+}
+
+.filter-select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 18px;
+
+  transform: translateY(-50%);
+}
+
+.filter-select:hover + .filter-select-arrow path {
+  fill: #323232;
 }
 
 .filter-select option {
