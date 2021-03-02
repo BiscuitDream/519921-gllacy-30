@@ -1329,6 +1329,8 @@ img {
   position: relative;
 
   padding-left: 33px;
+
+  cursor: pointer;
 }
 
 .input-radio + label::before {
@@ -1376,6 +1378,8 @@ img {
   position: relative;
 
   padding-left: 30px;
+
+  cursor: pointer;
 }
 
 .input-checkbox + label::before {
@@ -1451,6 +1455,7 @@ img {
   /*background-image: url("../img/icons/select-arrow-icon.svg");*/
   /*background-repeat: no-repeat;*/
   /*background-position: right 14px top 50%;*/
+  cursor: pointer;
 
   appearance: none;
 }
@@ -1533,6 +1538,7 @@ img {
   border-radius: 50%;
 
   background-color: #ababab;
+  cursor: pointer;
 }
 
 .toggle-min {
@@ -1555,6 +1561,7 @@ img {
   vertical-align: middle;
 
   background-color: var(--accent-text);
+  cursor: pointer;
 }
 
 .filters-submit:hover {
@@ -1628,6 +1635,8 @@ img {
   font-size: 16px;
   line-height: 18px;
   text-decoration: none;
+
+  cursor: pointer;
 }
 
 .pagination-link-current {
