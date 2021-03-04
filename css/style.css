@@ -1207,13 +1207,37 @@ img {
 
 /* Modal */
 
-.modal {
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+
   display: none;
+
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+
+  display: none;
+
+  transform: translate(-50%, -50%);
 }
 
 /* Feedback */
 
-.feedback {
+.modal-feedback {
+  /*display: block;*/
+  width: 477px;
+  padding: 15px 24px 28px;
   border-radius: 6px;
 
   color: var(--secondary-text);
@@ -1221,10 +1245,46 @@ img {
   background-color: var(--bg-popup);
 }
 
-.feedback-text {
+.feedback-desc {
+  margin: 0 0 20px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
+}
+
+.feedback-form-item {
+  margin: 0 0 20px;
+}
+
+.feedback-form-input {
+  min-width: 267px;
+  padding: 11px 14px;
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 4px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: #ffffff;
+}
+
+.feedback-form-input::placeholder {
+  color: #999999;
+}
+
+.feedback-form-textarea {
+  width: 100%;
+  height: 154px;
+
+  resize: none;
+}
+
+.feedback-form-button {
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  padding: 9px 24px;
 }
 
 /* Catalog page */
