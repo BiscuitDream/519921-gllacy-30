@@ -615,10 +615,15 @@ img {
 }
 
 .slider-item {
-  display: grid;
+  /*display: grid;*/
+  display: none;
   grid-template-rows: auto auto auto;
   grid-template-columns: 1fr;
   justify-items: center;
+}
+
+.slider-active {
+  display: grid;
 }
 
 .slider-title {
