@@ -292,6 +292,8 @@ img {
 }
 
 .catalog-dropdown-link:hover {
+  color: #323232;
+
   background-color: #fbded7;
 }
 
@@ -300,6 +302,8 @@ img {
 }
 
 .catalog-dropdown-link-current {
+  color: #ffffff;
+
   background-color: #d07058;
 }
 
