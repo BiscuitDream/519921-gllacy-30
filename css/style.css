@@ -187,6 +187,10 @@ img {
   padding-top: 8px;
 }
 
+.page-index .page-header {
+  margin-bottom: -122px;
+}
+
 .main-navigation {
   display: flex;
   align-items: center;
@@ -605,6 +609,14 @@ img {
   position: relative;
 
   margin-bottom: -19px;
+  padding-top: 83px;
+
+  background-image:
+    radial-gradient(
+      circle at center,
+      rgba(215, 242, 227, 0.75) 0,
+      transparent 358px
+    );
 }
 
 .slider-list {
