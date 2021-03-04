@@ -274,6 +274,12 @@ img {
   display: block;
 }
 
+.site-navigation-item-dropdown:hover .site-navigation-link {
+  color: var(--secondary-text);
+
+  background-color: #ffffff;
+}
+
 .site-navigation-item-dropdown::before {
   position: absolute;
   bottom: -10px;
@@ -371,7 +377,8 @@ img {
   padding: 8px;
 }
 
-.user-navigation-link:hover {
+.user-navigation-link:hover,
+.user-navigation-item:hover .user-navigation-link {
   color: #323232;
 
   background-color: #ffffff;
@@ -381,7 +388,8 @@ img {
   margin-left: 8px;
 }
 
-.user-navigation-link:hover path {
+.user-navigation-link:hover path,
+.user-navigation-item:hover path {
   fill: #323232;
 }
 
