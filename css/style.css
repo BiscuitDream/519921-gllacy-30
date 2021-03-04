@@ -1293,13 +1293,14 @@ img {
 
 /* Catalog page */
 
-.page-catalog .container {
+.page-catalog {
   background-image:
     linear-gradient(
       180deg,
-      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.2) 0,
       rgba(255, 255, 255, 0) 656px
     );
+  background-repeat: no-repeat;
 }
 
 .page-title {
