@@ -1039,22 +1039,8 @@ img {
   height: 430px;
 
   vertical-align: bottom;
-}
 
-.map::before {
-  position: absolute;
-  top: 136px;
-  left: 266px;
-
-  display: block;
-  width: 80px;
-  height: 140px;
-
-  background-image: url("../img/pin.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-
-  content: "";
+  background-color: #ede6c9;
 }
 
 .map-contacts {
