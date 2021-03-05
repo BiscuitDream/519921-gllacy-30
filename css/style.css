@@ -1270,6 +1270,10 @@ img {
   transform: translate(-50%, -50%);
 }
 
+.modal-show {
+  display: block;
+}
+
 .modal-close {
   position: absolute;
   top: 12px;
@@ -1291,7 +1295,6 @@ img {
 
 .modal-feedback {
   /*top: 558px;*/
-  /*display: block;*/
   width: 477px;
   padding: 15px 24px 28px;
   border-radius: 6px;
