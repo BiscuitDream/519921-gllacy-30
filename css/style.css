@@ -270,6 +270,10 @@ img {
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
 }
 
+.site-navigation-item-dropdown:focus-within .catalog-dropdown-list {
+  display: block;
+}
+
 .site-navigation-item-dropdown:hover .catalog-dropdown-list {
   display: block;
 }
@@ -437,6 +441,10 @@ img {
 }
 
 .user-navigation-item:hover .user-navigation-dropdown {
+  display: block;
+}
+
+.user-navigation-item:focus-within .user-navigation-dropdown {
   display: block;
 }
 
