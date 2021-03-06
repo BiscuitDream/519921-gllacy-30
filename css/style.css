@@ -1523,6 +1523,13 @@ img {
   opacity: 0.4;
 }
 
+.input-radio:focus + label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  /*outline-offset: -2px;*/
+}
+
 .input-checkbox + label {
   position: relative;
 
@@ -1559,6 +1566,13 @@ img {
 .input-checkbox:disabled + label,
 .input-checkbox:disabled + label::before {
   opacity: 0.4;
+}
+
+.input-checkbox:focus + label::before {
+  outline: -webkit-focus-ring-color auto 1px;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  /*outline-offset: -2px;*/
 }
 
 .filters-group {
