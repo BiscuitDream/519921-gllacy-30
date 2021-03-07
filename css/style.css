@@ -1091,6 +1091,8 @@ img {
 
 .map .container {
   position: relative;
+
+  padding-top: 60px;
 }
 
 .map-picture {
