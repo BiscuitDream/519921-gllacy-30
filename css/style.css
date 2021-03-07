@@ -85,6 +85,18 @@ body {
   background-color: var(--bg-first);
 }
 
+.bg1 {
+  background-color: var(--bg-first);
+}
+
+.bg2 {
+  background-color: var(--bg-second);
+}
+
+.bg3 {
+  background-color: var(--bg-third);
+}
+
 a {
   /*text-decoration: none;*/
   /*border-bottom: 1px solid var(--underline-text);*/
@@ -644,7 +656,7 @@ img {
   justify-items: center;
 }
 
-.slider-active {
+.slider-current {
   display: grid;
 }
 
@@ -667,6 +679,8 @@ img {
 
   grid-row: 1 / 4;
   grid-column: 1 / 2;
+  width: 647px;
+  height: 584px;
 }
 
 .slider-button {
@@ -1059,8 +1073,28 @@ img {
   position: relative;
 
   min-height: 430px;
-  padding-top: 62px;
-  padding-bottom: 62px;
+
+  background-image: url("../img/map-corrected.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 430px;
+  border: none;
+}
+
+.map .container {
+  position: relative;
+
+  padding-top: 60px;
+
+  pointer-events: none;
 }
 
 .map-picture {
@@ -1088,6 +1122,8 @@ img {
   line-height: 20px;
 
   background-color: var(--bg-popup-alternative);
+
+  pointer-events: auto;
 }
 
 .map-contacts-caption {
@@ -1277,6 +1313,12 @@ img {
 
 .modal-show {
   display: block;
+
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }
 
 .modal-close {
@@ -1822,4 +1864,46 @@ img {
   color: #323232;
 
   background-color: #ffffff;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translate(-50%, -2000px);
+  }
+
+  70% {
+    transform: translate(-50%, -55%);
+  }
+
+  90% {
+    transform: translate(-50%, -45%);
+  }
+
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate(-48%, -50%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate(-52%, -50%);
+  }
 }
