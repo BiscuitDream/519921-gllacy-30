@@ -1093,6 +1093,8 @@ img {
   position: relative;
 
   padding-top: 60px;
+
+  pointer-events: none;
 }
 
 .map-picture {
@@ -1100,17 +1102,16 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
+
   width: 1200px;
   height: 430px;
+
   vertical-align: bottom;
+
   background-color: #ede6c9;
 }
 
 .map-contacts {
-  /*position: absolute;*/
-  /*top: 60px;*/
-  /*right: 27px;*/
-
   width: 303px;
   margin-left: auto;
   padding: 29px 25px;
@@ -1121,6 +1122,8 @@ img {
   line-height: 20px;
 
   background-color: var(--bg-popup-alternative);
+
+  pointer-events: auto;
 }
 
 .map-contacts-caption {
