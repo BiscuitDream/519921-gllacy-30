@@ -1073,32 +1073,31 @@ img {
   position: relative;
 
   min-height: 430px;
-  /*padding-top: 62px;*/
-  /*padding-bottom: 62px;*/
+
+  background-image: url("../img/map-corrected.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.map-interactive {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 430px;
+  border: none;
 }
 
 .map .container {
   position: relative;
-
-  padding-top: 62px;
-  padding-bottom: 62px;
-}
-
-.map-picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-
-  width: 1200px;
-  height: 430px;
-
-  vertical-align: bottom;
-
-  background-color: #ede6c9;
 }
 
 .map-contacts {
+  position: absolute;
+  top: 60px;
+  right: 27px;
+
   width: 303px;
   margin-left: auto;
   padding: 29px 25px;
@@ -1137,15 +1136,6 @@ img {
 
 .map-contacts-button {
   padding: 10px 28px;
-}
-
-.map-interactive {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 430px;
 }
 
 /* Footer */
