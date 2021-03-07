@@ -1093,10 +1093,21 @@ img {
   position: relative;
 }
 
-.map-contacts {
+.map-picture {
   position: absolute;
-  top: 60px;
-  right: 27px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 1200px;
+  height: 430px;
+  vertical-align: bottom;
+  background-color: #ede6c9;
+}
+
+.map-contacts {
+  /*position: absolute;*/
+  /*top: 60px;*/
+  /*right: 27px;*/
 
   width: 303px;
   margin-left: auto;
