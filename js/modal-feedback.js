@@ -45,3 +45,14 @@ window.addEventListener('keydown', (evt) => {
     }
   }
 });
+
+const feedbackForm = modalFeedback.querySelector('form');
+
+feedbackForm.addEventListener('submit', (evt) => {
+  if (!feedbackForm.name.value || !feedbackForm.email.value || !feedbackForm.message.value) {
+    evt.preventDefault();
+    modalFeedback.classList.remove('modal-error');
+    modalFeedback.offsetWidth;
+    modalFeedback.classList.add('modal-error');
+  }
+});
