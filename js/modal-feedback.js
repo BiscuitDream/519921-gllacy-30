@@ -21,6 +21,7 @@ const modalFeedbackOn = () => {
 const modalFeedbackOff = () => {
   overlayOff();
   modalFeedback.classList.remove('modal-show');
+  modalFeedback.classList.remove('modal-error');
 };
 
 overlay.addEventListener('click', (evt) => {
