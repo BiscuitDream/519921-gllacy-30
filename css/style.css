@@ -210,15 +210,20 @@ img {
 }
 
 .main-header-logo {
+  flex-shrink: 0;
   margin-right: 12px;
 }
 
 .main-header-logo img {
+  width: 154px;
+  height: 64px;
+
   vertical-align: bottom;
 }
 
 .site-navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto 0 0;
   padding: 0 0 5px;
 
@@ -357,7 +362,7 @@ img {
 
 .user-navigation {
   display: flex;
-  margin: 0;
+  margin: 0 0 0 50px;
   padding: 0;
 
   font-weight: 500;
@@ -754,14 +759,16 @@ img {
   background-color: var(--bg-pic-raspberry);
   background-image: url("../img/raspberry-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .promotion-item-chocolate {
   background-color: var(--bg-pic-chocolate);
   background-image: url("../img/chocolate-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .promotion-title {
