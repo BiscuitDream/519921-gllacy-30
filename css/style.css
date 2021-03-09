@@ -1074,10 +1074,6 @@ img {
   position: relative;
 
   min-height: 430px;
-
-  background-image: url("../img/map-corrected.png");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .map-interactive {
