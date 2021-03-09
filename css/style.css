@@ -195,6 +195,12 @@ img {
 
   margin-bottom: -41px;
   padding-top: 8px;
+
+  pointer-events: none;
+}
+
+.page-header * {
+  pointer-events: auto;
 }
 
 .main-navigation {
