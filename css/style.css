@@ -6,7 +6,7 @@
   font-style: normal;
   src:
     url("../fonts/roboto.woff2") format("woff2"),
-    url("../fonts/roboto.woff2") format("woff");
+    url("../fonts/roboto.woff") format("woff");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: normal;
   src:
     url("../fonts/robotomedium.woff2") format("woff2"),
-    url("../fonts/robotomedium.woff2") format("woff");
+    url("../fonts/robotomedium.woff") format("woff");
 }
 
 @font-face {
@@ -24,7 +24,7 @@
   font-style: normal;
   src:
     url("../fonts/robotobold.woff2") format("woff2"),
-    url("../fonts/robotobold.woff2") format("woff");
+    url("../fonts/robotobold.woff") format("woff");
 }
 
 /* Variables */
@@ -871,6 +871,8 @@ img {
 
 .product-item-image {
   order: 1;
+  width: 267px;
+  height: 267px;
   margin-bottom: -60px;
   border-radius: 50%;
 }
