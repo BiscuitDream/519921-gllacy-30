@@ -7,8 +7,8 @@
     <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicon/apple-icon-180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page-index bg1">
     <header class="page-header container">
@@ -87,11 +87,12 @@
             </form>
           </li>
           <li class="user-navigation-item">
-            <a class="user-navigation-link" href="#">
+            <a class="user-navigation-link cart-link cart-link-empty" href="#">
               <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="white"/>
                 <path d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z" fill="white"/>
                 <path d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z" fill="white"/>
+                <path d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z" fill="white"/>
+                <path class="cart-icon" d="M5.93506 4.03003L6.97297 13H17.5032L18.6923 4.03003H5.93506Z" fill="#E84D37"/>
               </svg>
               <span>Пусто</span>
             </a>
@@ -242,15 +243,15 @@
       </div>
 
       <section class="map">
-        <iframe class="map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300305!2d30.32085871618319!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615117019154!5m2!1sru!2sru" width="100%" height="430" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="map-interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300305!2d30.32085871618319!3d59.938719169054096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1615117019154!5m2!1sru!2sru" height="430" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
         <div class="container">
           <h2 class="visually-hidden">Наше местоположение</h2>
-          <img class="map-picture" src="img/map-corrected.png" width="1200" height="430" alt="Карта магазина по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <img class="map-picture" src="img/map.png" width="1200" height="430" alt="Карта магазина по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
           <div class="map-contacts">
             <p class="map-contacts-caption">Адрес главного офиса<br> и офлайн-магазина:</p>
             <p class="map-contacts-address">ул. Большая Конюшенная,<br> 19/8, Санкт-Петербург</p>
             <p class="map-contacts-phone">Для заказов по телефону:<br> <a class="map-contacts-phone-number link-alt" href="tel:88124502525">8 812 450-25-25</a><br> (с 10 до 20 ежедневно)</p>
-            <a class="map-contacts-button button" href="#">Форма обратной связи</a>
+            <a class="map-contacts-button button" href="feedback.html">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -357,7 +358,7 @@
         <span class="visually-hidden">Закрыть</span>
       </button>
     </section>
-    <script src="js/modal-feedback.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/modal-feedback.min.js"></script>
+    <script src="js/slider.min.js"></script>
   </body>
 </html>
