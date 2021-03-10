@@ -33,50 +33,47 @@
   --primary-text: #ffffff;
   --secondary-text: #323232;
   --alternative-text: #5a5a5a;
-  --bg-decor: rgba(255, 255, 255, 0.2);
-  --bg-decor-alt: rgba(0, 0, 0, 0.07);
   --unimportant-text: #ababab;
-
   --text-shadow: rgba(49, 50, 53, 0.5);
-
   --bg-body-first: #849d8f;
   --bg-body-second: #8996a6;
   --bg-body-third: #9d8b84;
-
   --bg-base: #ffffff;
   --bg-secondary: #f8f7f4;
   --bg-alternative: #fefefe;
-
   --bg-pic-waffle: #ede1ca;
   --bg-pic-raspberry: #6c061e;
   --bg-pic-chocolate: #4c2b15;
   --bg-pic-map: #ede6c9;
-
+  --bg-decor: rgba(255, 255, 255, 0.2);
+  --bg-decor-alt: rgba(0, 0, 0, 0.07);
   --link-hover: #ffbc9e;
   --link-alt-hover: #e84d37;
   --link-und-hover: rgba(255, 188, 158, 0.3);
   --link-alt-und-hover: rgba(232, 77, 55, 0.3);
   --bg-link-hover: #ededed;
   --bg-link-current: #d07058;
-
-  --btn-text-shadow: rgba(160, 32, 11, 0.76);
   --link-shadow: #696969;
-
-  --cart-icon: #343434;
-  --placeholder: #999999;
-
   --drop-link-hover: #fbded7;
   --drop-link-active: #f6b5a5;
-
-  --border-decor: #cacac7;
-
+  --drop-link-accent: rgba(50, 50, 50, 0.2);
+  --drop-shadow: rgba(0, 0, 0, 0.4);
   --btn-grad-start: #f26843;
   --btn-grad-end: #e74a35;
   --btn-shadow: rgba(172, 16, 0, 0.64);
   --btn-shadow-hover: #ac1000;
   --btn-shadow-active: #942718;
-
-  --drop-shadow: rgba(0, 0, 0, 0.4);
+  --btn-text-shadow: rgba(160, 32, 11, 0.76);
+  --input-border: rgba(178, 178, 178, 0.52);
+  --input-border-focus: rgba(46, 136, 228, 0.52);
+  --slider-bg-decor: rgba(215, 242, 227, 0.75);
+  --slider-toggle-hover: rgba(255, 255, 255, 0.4);
+  --cart-icon: #343434;
+  --placeholder: #999999;
+  --bg-card-decor: rgba(0, 0, 0, 0.2);
+  --scale-bg: rgba(248, 247, 244, 0.5);
+  --border-decor: #cacac7;
+  --overlay: rgba(0, 0, 0, 0.3);
 }
 
 /* Global */
@@ -379,7 +376,7 @@ img {
   width: 128px;
   height: 1px;
 
-  background-color: rgba(50, 50, 50, 0.2);
+  background-color: var(--drop-link-accent);
 
   content: "";
 }
@@ -475,18 +472,18 @@ img {
 .user-navigation-dropdown input {
   width: 100%;
   padding: 12px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--input-border);
   border-radius: 4px;
 }
 
 .user-navigation-dropdown input:hover {
   padding: 11px;
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid var(--input-border);
 }
 
 .user-navigation-dropdown input:focus {
   padding: 11px;
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  border: 2px solid var(--input-border-focus);
 
   outline: none;
 }
@@ -673,7 +670,7 @@ img {
   background-image:
     radial-gradient(
       circle at center,
-      rgba(215, 242, 227, 0.75) 0,
+      var(--slider-bg-decor) 0,
       transparent 358px
     );
 }
@@ -754,7 +751,7 @@ img {
 }
 
 .slider-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: var(--slider-toggle-hover);
   cursor: pointer;
 }
 
@@ -877,7 +874,7 @@ img {
   border-radius: 4px;
 
   background-color: var(--bg-base);
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 20px var(--bg-card-decor);
   opacity: 0.2;
 
   content: "";
@@ -1094,7 +1091,7 @@ img {
 .mail-subscription-input {
   flex-grow: 1;
   padding: 5px 14px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--input-border);
   border-radius: 6px;
 
   font-size: 16px;
@@ -1322,7 +1319,7 @@ img {
 
   display: none;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: var(--overlay);
   cursor: pointer;
 }
 
@@ -1391,7 +1388,7 @@ img {
 .feedback-form-input {
   min-width: 267px;
   padding: 11px 14px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--input-border);
   border-radius: 4px;
 
   font-size: 16px;
@@ -1402,12 +1399,12 @@ img {
 
 .feedback-form-input:hover {
   padding: 10px 13px;
-  border: 2px solid rgba(178, 178, 178, 0.52);
+  border: 2px solid var(--input-border);
 }
 
 .feedback-form-input:focus {
   padding: 10px 13px;
-  border: 2px solid rgba(46, 136, 228, 0.52);
+  border: 2px solid var(--input-border-focus);
 
   outline: none;
 }
@@ -1439,7 +1436,7 @@ img {
     linear-gradient(
       180deg,
       var(--bg-decor) 0,
-      rgba(255, 255, 255, 0) 656px
+      transparent 656px
     );
   background-repeat: no-repeat;
 }
@@ -1742,7 +1739,7 @@ img {
   width: 176px;
   height: 2px;
 
-  background-color: rgba(248, 247, 244, 0.5);
+  background-color: var(--scale-bg);
 }
 
 .bar {
