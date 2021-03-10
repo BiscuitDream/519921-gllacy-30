@@ -413,14 +413,25 @@ img {
   fill: #323232;
 }
 
-.user-navigation-link-cart {
+.cart-link-empty .cart-icon,
+.cart-link-empty:hover .cart-icon {
+  fill: none;
+}
+
+.cart-link-filled {
   color: #323232;
 
   background-color: #ffffff;
 }
 
-.user-navigation-link-cart:hover .cart-icon {
-  fill: #e84d37;
+.cart-link-filled path {
+  fill: #343434;
+}
+
+.cart-link-filled .cart-icon,
+.cart-link-filled:hover .cart-icon,
+.user-navigation-item:hover .cart-icon {
+  fill: #E84D37;
 }
 
 .user-navigation-dropdown {
