@@ -1205,6 +1205,10 @@ img {
   border-top: 1px solid var(--bg-decor);
 }
 
+.footer-socials {
+  margin-right: 10px;
+}
+
 .social-list {
   display: flex;
   flex-wrap: wrap;
@@ -1212,6 +1216,11 @@ img {
   padding: 0;
 
   list-style: none;
+}
+
+.social-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 
 .social-item:not(:last-child) {
@@ -1251,6 +1260,8 @@ img {
 }
 
 .footer-info {
+  flex-shrink: 0;
+  margin-right: 10px;
   padding-top: 10px;
 }
 
@@ -1297,6 +1308,8 @@ img {
 }
 
 .footer-copyright {
+  flex-shrink: 0;
+
   font-size: 12px;
   line-height: 18px;
 }
@@ -1527,11 +1540,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 9px 15px;
+  padding: 4px 15px;
   border-radius: 20px;
 
   list-style: none;
   background-color: var(--bg-decor);
+}
+
+.filter-radio-option {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .filter-radio-option:not(:last-child) {
@@ -1542,11 +1560,16 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 9px 22px 9px 16px;
+  padding: 4px 22px 4px 16px;
   border-radius: 20px;
 
   list-style: none;
   background-color: var(--bg-decor);
+}
+
+.filter-checkbox-option {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .filter-checkbox-option:not(:last-child) {
