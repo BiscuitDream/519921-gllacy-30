@@ -628,7 +628,6 @@ img {
 
 .cart-button {
   display: block;
-  width: max-content;
   margin-left: auto;
   padding: 10px 14px;
 }
@@ -783,6 +782,8 @@ img {
 }
 
 .promotion-item {
+  display: flex;
+  flex-direction: column;
   padding: 14px 22px 22px 16px;
   border-radius: 16px;
 }
@@ -820,8 +821,6 @@ img {
 }
 
 .promotion-button {
-  display: block;
-  width: max-content;
   margin-left: auto;
 }
 
@@ -1041,7 +1040,8 @@ img {
   background-color: var(--bg-base);
   background-image: url("../img/strawberry-bg.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .blog-preview-lead {
@@ -1068,7 +1068,8 @@ img {
 
   background-image: url("../img/mail-bg.png");
   background-repeat: no-repeat;
-  background-position: 0 0;
+  background-position: center;
+  background-size: cover;
 }
 
 .mail-subscription-wrapper {
@@ -1206,6 +1207,7 @@ img {
 
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
@@ -1423,6 +1425,7 @@ img {
 .feedback-form-button {
   display: block;
   width: max-content;
+  max-width: 100%;
   margin-left: auto;
   padding: 9px 24px;
 }
@@ -1522,6 +1525,7 @@ img {
 
 .filters-radio-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 9px 15px;
   border-radius: 20px;
@@ -1536,6 +1540,7 @@ img {
 
 .filters-checkbox-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 9px 22px 9px 16px;
   border-radius: 20px;
@@ -1815,7 +1820,6 @@ img {
 .pagination {
   display: flex;
   align-content: center;
-  width: max-content;
   margin-top: auto;
   margin-left: auto;
 }
