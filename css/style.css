@@ -106,15 +106,15 @@ body {
   background-color: var(--bg-body-first);
 }
 
-.bg1 {
+.page-index-background1 {
   background-color: var(--bg-body-first);
 }
 
-.bg2 {
+.page-index-background2 {
   background-color: var(--bg-body-second);
 }
 
-.bg3 {
+.page-index-background3 {
   background-color: var(--bg-body-third);
 }
 
