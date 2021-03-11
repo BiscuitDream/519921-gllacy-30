@@ -5,11 +5,11 @@ const feedbackCloseBtn = modalFeedback.querySelector('.modal-close');
 const feedbackNameInput = modalFeedback.querySelector('input[name="name"]');
 
 const overlayOn = () => {
-  overlay.style.display = "block";
+  overlay.style.display = 'block';
 }
 
 const overlayOff = () => {
-  overlay.style.display = "none";
+  overlay.style.display = 'none';
 }
 
 const modalFeedbackOn = () => {
